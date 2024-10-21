@@ -1,0 +1,175 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: center;
+    background-color: blue;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    flex: 1 0 auto;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: goldenrod;
+    border-top: 2px solid black;
+    margin-top: 15px;
+    flex-shrink: 0;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 2;
+    align-self: flex-start;
+}
+header h1 {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 32px;
+    flex-grow: 1;
+}
+a {
+    width: 75px;
+    display: block;
+    text-align: center;
+}
+article {
+    width: 100%;
+    margin: 15px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+}
+h1 {
+    color: white;
+}
+h3 {
+    font-weight: bold;
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin: 0;
+    background-color: orange;
+    color: white;
+}
+article p {
+    text-align: justify;
+    padding: 15px;
+}
+.logo {
+    border-radius: 10px;
+    width: 125px; 
+    height: 90px;;
+}
+.menu {
+    color: white;
+    background-color:black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    border-radius: 10px;
+}
+.sign {
+    font-weight: bold;
+}
+.burger {
+    display: none;
+}
+.more {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    padding: 15px;
+}
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: animation_square;
+    animation-duration: 4s;
+}
+@keyframes animation_square {
+    0%   {background-color:blue; left:0px; top:0px;}
+    25%  {background-color:black; left:0px; top:-200px;}
+    50%  {background-color:blue; left:-200px; top:-200px;}
+    75%  {background-color:black; left:0px; top:-200px;}
+    100% {background-color:blue; left:0px; top:0px;}
+  }
+@media all and (max-width: 1200px) {
+    h1, nav {
+        display: none;
+    }
+    .logo {
+        justify-content: left;
+    }
+    .burger {
+        display: block;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .canva {
+        display: none;
+    }
+    .animation {
+        display: none;
+    }
+}
+@media all and (max-width: 700px) {
+    main {
+            flex-wrap: wrap;
+             }
+    h1, nav {
+        display: none;
+    }
+    .logo {
+        justify-content: left;
+    }
+    .burger {
+        display: block;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .more {
+        display: none;
+    }
+}
