@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona AGH instrukcja II</title>
+    <title>lista_1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="https://res.cloudinary.com/vistaprint/images/c_scale,w_448,h_448,dpr_2/f_auto,q_auto/v1705580343/ideas-and-advice-prod/en-us/adidas/adidas.png?_i=AA" alt="Logo" width="75" height="75">
+        <img class="logo" src="https://ztp.krakow.pl/wp-content/uploads/slider/cache/9d1a1ccbae334ddd045654b8dd2b10ea/MAN_Mobilis.jpg" alt="Logo">
         <img class="burger" src="burger.png" alt="burger menu" width="75" height="75">
-        <h1>Pierwsza responsywna strona internetowa</h1>
+        <h1>Lista 1</h1>
         <nav>
-            <a href="">Link 1</a>
-            <a href="">Link 2</a>
-            <a href="">Link 3</a>
+            <a class="menu" href="https://youtu.be/dQw4w9WgXcQ?si=S21647AvZ_3-2yyR">Link 1</a>
+            <a class="menu" href="https://youtu.be/dQw4w9WgXcQ?si=S21647AvZ_3-2yyR">Link 2</a>
+            <a class="menu" href="https://youtu.be/dQw4w9WgXcQ?si=S21647AvZ_3-2yyR">Link 3</a>
         </nav>
     </header>
     <main>
@@ -31,6 +31,40 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ullam neque praesentium dolor delectus quo? Tempore placeat consectetur sequi soluta repellendus, doloremque molestias aliquid, quos quisquam numquam quibusdam reprehenderit ullam.</p>
         </article>
     </main>
+    <div class="more">
+        <canvas class="canva" id="myCanvas" width="200" height="100"></canvas>
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.strokeStyle = "black";
+            ctx.beginPath();
+            ctx.moveTo(20, 20);
+            ctx.quadraticCurveTo(5, 150, 200, 15);
+            ctx.stroke();
+        </script><hr>
+        <video width="140" height="240" controls>
+            <source src="maklowicz.mp4" type="video/mp4">
+        </video><hr>
+        <ul>
+            <li>Robert</li>
+            <li>Makłowicz</li>
+            <ul>
+                <li>to król</li>
+                <li>to bóg</li>
+            </ul>
+        </ul><hr>
+        <form>
+            <label for="fname">Imię:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Nazwisko:</label><br>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <input type="submit" value="Tu kliknij">
+        </form><hr>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=S21647AvZ_3-2yyR">
+            <button>A tu pod żadnym pozorem nie klikaj!</button>
+        </a><hr>
+        <div class="animation"></div>
+    </div>
     <footer>
         <p>Projekt i wykonanie</p>
         <p class="sign">Bartosz Gurgul</p>
